@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Subscriptions</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="css/style-base.css" />
+
+  <style>
+
+  .wow {
+    visibility: hidden;
+  }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 d-flex align-items-center">
+            <a href="" class="site-logo">
+              <img src="images/logo.svg" alt="Логотип на главной странице">
+            </a>
+
+            <form action="#" class="base-form">
+              <label class="search-label" for="search">Поиск на сайте</label>
+              <input class="search-input" type="search" name="search" id="search" placeholder="Search for illustrations">
+            </form>
+          </div>
+
+          <div class="col-lg-6 ">
+            <nav class="nav justify-content-end align-items-baseline">
+              <a class="nav-link nav-link-dots" href="#">Categories</a>
+              <a class="nav-link" href="#">Packages</a>
+              <a class="nav-link" href="#">Free goods</a>
+              <a class="nav-link nav-link-violet" href="#">Sign in</a>
+              <a class="nav-link nav-link-violet nav-link-opacity" href="#">Sign up</a>
+            </nav>
+          </div>
+        </div>
+
+      </header>
+
+      <main>
+
+        <section class="subsciption">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-5">
+                <h2 class="subsciption-title text-center">Subscription prices</h2>
+                <p class="subsciption-descr text-center">We prepared for you simple monthly and anually plans. Unlock hundreds illustations.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="toggles">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 d-flex align-items-baseline">
+                <button type="button" class="btn btn-toggles btn-active" id="monthly">Monthly Billing</button>
+                <button type="button" class="btn btn-toggles" id="annual">Annual Billing</button>
+                <p class="toggles-sale">save %40</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rates">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-4 d-flex align-items-center flex-column">
+                <h2 class="rates-title">starter</h2>
+                <p class="rates-price">
+                  <span class="rates-number">29</span>
+                  <span class="rates-divider"></span>
+                  month
+                </p>
+
+                <p class="rates-downloads d-flex align-items-center flex-column">
+                  <span>20</span>
+                  downloads per month
+                </p>
+
+                <p class="rates-fixed">
+                  $<span>1,45</span> download
+                </p>
+                <a href="#" class="btn btn-pay" role="button" aria-pressed="true">Pay via card</a>
+              </div>
+
+
+
+              <div class="col-lg-4 d-flex align-items-center flex-column hit">
+                <h2 class="rates-title">creator</h2>
+                <p class="rates-price">
+                  <span class="rates-number">49</span>
+                  <span class="rates-divider"></span>
+                  month
+                </p>
+
+                <p class="rates-downloads d-flex align-items-center flex-column">
+                  <span>50</span>
+                  downloads per month
+                </p>
+
+                <p class="rates-fixed">
+                  $<span>0,98</span> download
+                </p>
+                <a href="#" class="btn btn-pay" role="button" aria-pressed="true">Pay via card</a>
+              </div>
+
+
+
+              <div class="col-lg-4 d-flex align-items-center flex-column">
+                <h2 class="rates-title">pro</h2>
+                <p class="rates-price">
+                  <span class="rates-number">69</span>
+                  <span class="rates-divider"></span>
+                  month
+                </p>
+
+                <p class="rates-downloads d-flex align-items-center flex-column">
+                  <span>150</span>
+                  downloads per month
+                </p>
+
+                <p class="rates-fixed">
+                  $<span>0,46</span> download
+                </p>
+                <a href="#" class="btn btn-pay" role="button" aria-pressed="true">Pay via card</a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+      <script type="text/javascript" src="js/jquery.scrollme.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+
+      <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       0
+        }
+      );
+      wow.init();
+
+      let toggles = document.querySelectorAll('.btn-toggles');
+
+      const find = (arr) => {
+        for(let i = 0; i < arr.length; i++) {
+          if(arr[i].classList.contains('btn-active')) {
+            arr[i].classList.remove('btn-active');
+          }
+        };
+      }
+
+      for(let i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener('click', function(evt) {
+          evt.preventDefault();
+          find(toggles);
+          toggles[i].classList.toggle('btn-active');
+        });
+      }
+      </script>
+
+    </body>
+    </html>
